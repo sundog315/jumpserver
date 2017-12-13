@@ -34,8 +34,16 @@
 
     <div class="hr-line-dashed"></div>
     <h3>{% trans 'Configuration' %}</h3>
+    {% bootstrap_field form.vendor layout="horizontal" %}
+    {% bootstrap_field form.model layout="horizontal" %}
+    {% bootstrap_field form.sn layout="horizontal" %}
     {% bootstrap_field form.number layout="horizontal" %}
     {% bootstrap_field form.remote_card_ip layout="horizontal" %}
+    {% bootstrap_field form.platform layout="horizontal" %}
+    {% bootstrap_field form.os layout="horizontal" %}
+    {% bootstrap_field form.os_version layout="horizontal" %}
+    {% bootstrap_field form.os_arch layout="horizontal" %}
+    {% bootstrap_field form.hostname_raw layout="horizontal" %}
 
     <div class="hr-line-dashed"></div>
     <h3>{% trans 'Location' %}</h3>
